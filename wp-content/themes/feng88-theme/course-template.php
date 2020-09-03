@@ -14,8 +14,13 @@ get_header('allpage'); ?>
                 while( have_posts() ) :
                 the_post();
 
+                    global $post;
+                    $cat = get_the_category($post->ID);
                 ?>
                 <div class="consult-up-links">
+                    <div class="breadcrumbs-container">
+                        <a href="<?php echo get_site_url() ?>">Главная</a> >> <a href="/learn/">Обучение</a> >> <a href="/learn/#<?php echo $cat[0]->slug; ?>"><?php echo $cat[0]->name; ?></a>
+                    </div>
                     <div class="open-sidebar-btn"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 469.333 469.333" style="enable-background:new 0 0 469.333 469.333;" xml:space="preserve">
                                 <path style="fill:#ffffff;" d="M426.667,0h-384C19.135,0,0,19.135,0,42.667v384c0,23.531,19.135,42.667,42.667,42.667h384  c23.531,0,42.667-19.135,42.667-42.667v-384C469.333,19.135,450.198,0,426.667,0z"/>
                             <g>
@@ -65,20 +70,20 @@ get_header('allpage'); ?>
                         <div class="learn-page-navigation-left"><img src="<?php the_field('thumbnail')  ?>" alt="<?php echo esc_html( get_the_title() ); ?>"></div>
                         <?php } ?>
                         <div class="learn-page-navigation-right"><ul>
-                                <li><a href="<?php echo get_permalink() ?>#course-description">Описание</a></li>
+                                <li><a class="navigation-links" href="course-description">Описание</a></li>
 
                                 <?php if( get_field('structure') ) :?>
-                                <li><a href="<?php echo get_permalink() ?>#course-structure">Структура</a></li>
+                                <li><a class="navigation-links" href="course-structure">Структура</a></li>
                                 <?php endif; ?>
 
                                 <?php if( get_field('requirement') ) :?>
-                                <li><a href="<?php echo get_permalink() ?>#course-req">Требования к участникам</a></li>
+                                <li><a class="navigation-links" href="course-req">Требования к участникам</a></li>
                                 <?php endif; ?>
 
                                 <?php if( get_field('programm') ) :?>
-                                <li><a href="<?php echo get_permalink() ?>#course-programm">Программа</a></li>
+                                <li><a class="navigation-links" href="course-programm">Программа</a></li>
                                 <?php endif; ?>
-                                <li><a href="<?php echo get_permalink() ?>#course-price">Стоимость</a></li>
+                                <li><a class="navigation-links" href="course-price">Стоимость</a></li>
                             </ul></div>
                     </div>
                     <div class="page-content-block-divider"></div>
@@ -89,7 +94,7 @@ get_header('allpage'); ?>
 
                     <?php if( get_field('structure') ) :?>
                     <h6 id="course-structure">Структура</h6>
-                    <p><img class="text-icon" src="/wp-content/uploads/2020/08/structure.svg" alt="структура курса"></p>
+                    <p><img class="text-icon" src="/wp-content/uploads/2020/08/bookmark.png" alt="структура курса"></p>
                         <?php the_field('structure') ?>
                     <?php endif; ?>
 

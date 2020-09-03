@@ -54,7 +54,7 @@ get_header(); ?>
                         <a href="/consult-bazi"><img src="/wp-content/uploads/2020/08/ieroglif.svg" alt="консультация по бацзы"></a>
                         <div class="down-content">
                             <a href="/consult-bazi"><h4>Консультация по Ба Цзы</h4></a>
-                            <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+                            <p>Обсуждение перспектив во всех сферах жизни: бизнес, отношения,  карьера и т.д. Определение причин неудач в бизнесе, карьере, личной жизни и других аспектах. Выработка стратегии, точки приложения усилий, стиля поведения в сложные периоды. Прогноз на ближайшие годы и текущий период. </p>
                             <a href="/consult-bazi" class="filled-button">подробнее</a>
                         </div>
                     </div>
@@ -64,7 +64,8 @@ get_header(); ?>
                         <a href="/vibor-dat"><img src="/wp-content/uploads/2020/08/ieroglif.svg" alt="выбор даты события"></a>
                         <div class="down-content">
                             <a href="/vibor-dat"><h4>Выбор даты события</h4></a>
-                            <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+                            <p>Расчет наиболее благоприятных дней и часов для конкретного дела в указанный период времени.
+                                Энергия дня используется как помощник. Правильно подобранная с учетом личной энергетики  дата, многократно усиливает успешность любого мероприятия.</p>
                             <a href="/vibor-dat" class="filled-button">подробнее</a>
                         </div>
                     </div>
@@ -74,7 +75,7 @@ get_header(); ?>
                         <a href="/consult-fenshui"><img src="/wp-content/uploads/2020/08/ieroglif.svg" alt="Фэн-шуй анализ жилья"></a>
                         <div class="down-content">
                             <a href="/consult-fenshui"><h4>Фэн-шуй анализ жилья</h4></a>
-                            <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+                            <p>Анализ энергетики помещения, сильные и слабые стороны Вашего жилья. Рекомендации по использованию помещений, оптимальное расположение мест постоянного пребывания: кровать, рабочий стол, место для отдыха. Индивидуальные сектора пространства для поддержки Вашей личной удачи.</p>
                             <a href="/consult-fenshui" class="filled-button">подробнее</a>
                         </div>
                     </div>
@@ -84,7 +85,7 @@ get_header(); ?>
                         <a href="/consult-bazi"><img src="/wp-content/uploads/2020/08/ieroglif.svg" alt="Восстановление часа рождения"></a>
                         <div class="down-content">
                             <a href="/consult-bazi"><h4>Восстановление часа рождения</h4></a>
-                            <p>Lorem ipsume dolor sit amet, adipisicing elite. Itaque, corporis nulla aspernatur.</p>
+                            <p>Правильно определив час, можно многократно повысить точность прогноза. Час в Бацзы дает понимание собственных внутренних установок, рассказывает об отношениях с детьми, описывает перспективы развития дел в собственном бизнесе, дает подсказку о возможности переезда.</p>
                             <a href="/consult-bazi" class="filled-button">подробнее</a>
                         </div>
                     </div>

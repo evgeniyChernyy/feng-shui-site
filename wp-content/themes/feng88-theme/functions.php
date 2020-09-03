@@ -70,6 +70,16 @@ function create_sidebar(){
         'before_title'  => '<h3 class="widgettitle">',
         'after_title'   => "</h3>\n",
     ) );
+    register_sidebar( array(
+        'name'          => 'Сайдбар-прогноз',
+        'id'            => "sidebar-prognoz",
+        'description'   => 'Сайдбар на странице "Прогноз"',
+        'class'         => '',
+        'before_widget' => '<div class="widget %2$s">',
+        'after_widget'  => "</div>",
+        'before_title'  => '<h3 class="widgettitle">',
+        'after_title'   => "</h3>\n",
+    ) );
 }
 
 //  типы записей
@@ -109,3 +119,5 @@ function new_post_types(){
     ) );
 }
 
+// позволяет использовать шорткод в текстовых виджетах сайдбара
+add_filter('widget_text','do_shortcode');

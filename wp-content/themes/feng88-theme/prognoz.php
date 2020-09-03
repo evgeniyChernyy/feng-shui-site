@@ -1,26 +1,16 @@
-<?php /*
- * Template Name: шаблон СТАТЬЯ
- * Template Post Type: post
- */
+<?php
+/*
+* Template Name: прогноз
+*/
 
-get_header('statya'); ?>
+get_header('allpage'); ?>
 
     <div class="container">
         <div class="row">
-            <?php get_sidebar('stati'); ?>
+            <?php get_sidebar('prognoz'); ?>
 
             <div class="col-lg-8 col-12">
-                <?php
-                while( have_posts() ) :
-                the_post();
-
-                    global $post;
-                    $cat = get_the_category($post->ID);
-                ?>
-                <div class="consult-up-links statya">
-                    <div class="breadcrumbs-container">
-                        <a href="<?php echo get_site_url() ?>">Главная</a> >> <a href="/articles/">Статьи</a> >> <a href="/articles/#<?php echo $cat[0]->slug; ?>"><?php echo $cat[0]->name; ?></a>
-                    </div>
+                <div class="consult-up-links">
                     <div class="open-sidebar-btn"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 469.333 469.333" style="enable-background:new 0 0 469.333 469.333;" xml:space="preserve">
                                 <path style="fill:#ffffff;" d="M426.667,0h-384C19.135,0,0,19.135,0,42.667v384c0,23.531,19.135,42.667,42.667,42.667h384  c23.531,0,42.667-19.135,42.667-42.667v-384C469.333,19.135,450.198,0,426.667,0z"/>
                             <g>
@@ -61,17 +51,11 @@ get_header('statya'); ?>
                             <path style="fill:url(#SVGID_1_);" d="M426.667,0h-384C19.135,0,0,19.135,0,42.667v384c0,23.531,19.135,42.667,42.667,42.667h384  c23.531,0,42.667-19.135,42.667-42.667v-384C469.333,19.135,450.198,0,426.667,0z"/>
                             </svg>
                         <span>Боковая панель</span></div>
-                    <h1><?php echo esc_html( get_the_title() ); ?></h1>
+                    <h5>Прогнозы Фэн-шуй на каждый месяц</h5>
                 </div>
-
-                <div class="single-course-page-content page-content">
-
-               <?php the_content(); ?>
-
+                <div class="consult-page-content page-content">
+                        <?php the_content(); ?>
                 </div>
-                <?php
-                endwhile;
-                ?>
             </div>
         </div>
     </div>

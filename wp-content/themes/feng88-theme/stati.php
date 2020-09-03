@@ -61,19 +61,19 @@ get_header('allpage'); ?>
                                 <a href="#">В контакте</a>. А также видео на <a href="#">канале Youtube</a>.</p>
                             <span class="articles-subtitle">Разделы</span>
                             <br>
-                            <span class="articles-links"><a href="#">2020 год</a></span>
-                            <span class="articles-links"><a href="#">Основы Бацзы</a></span>
-                            <span class="articles-links"><a href="#">Бацзы</a></span>
-                            <span class="articles-links"><a href="#">12 Дворцов</a></span>
-                            <span class="articles-links"><a href="#">60 Цзя Цзы</a></span>
-                            <span class="articles-links"><a href="#">Символические звезды</a></span>
-                            <span class="articles-links"><a href="#">Фэн-шуй</a></span>
-                            <span class="articles-links"><a href="#">Выбор дат</a></span>
-                            <span class="articles-links"><a href="#">Ци Мень</a></span>
+                            <span class="articles-links"><a class="navigation-links" href="2020god">2020 год</a></span>
+                            <span class="articles-links"><a class="navigation-links" href="osnovy-bazi">Основы Бацзы</a></span>
+                            <span class="articles-links"><a class="navigation-links" href="bazi">Бацзы</a></span>
+                            <span class="articles-links"><a class="navigation-links" href="dvorci">12 Дворцов</a></span>
+                            <span class="articles-links"><a class="navigation-links" href="zyazi">60 Цзя Цзы</a></span>
+                            <span class="articles-links"><a class="navigation-links" href="symbol">Символические звезды</a></span>
+                            <span class="articles-links"><a class="navigation-links" href="fenshui">Фэн-шуй</a></span>
+                            <span class="articles-links"><a class="navigation-links" href="stati-vybor-dat">Выбор дат</a></span>
+                            <span class="articles-links"><a class="navigation-links" href="zi-men">Ци Мень</a></span>
                             </div>
                     </div>
                     <div class="page-content-block-divider"></div>
-                    <h6>Основы Бацзы</h6>
+                    <h6 id="osnovy-bazi">Основы Бацзы</h6>
                     <div class="links-block">
                         <p>
                         <?php
@@ -90,6 +90,7 @@ get_header('allpage'); ?>
 
                             ?>
 
+                            <?php  if ( get_field('new')){ echo "<span class='new'>NEW!</span>"; }?>
                             <a href="<?php echo get_permalink(); ?>"><?php echo the_title(); ?></a>
                             <br>
                             <?php
@@ -100,7 +101,7 @@ get_header('allpage'); ?>
                         </p>
                     </div>
                     <div class="page-content-block-divider"></div>
-                    <h6>Бацзы</h6>
+                    <h6 id="bazi">Бацзы</h6>
                     <div class="links-block">
                         <p><img style="float: left; margin: 5px; margin-right: 15px;" src="/wp-content/uploads/2020/08/note-bazi.jpg" alt="статьи о бацзы">
                         <?php
@@ -116,7 +117,7 @@ get_header('allpage'); ?>
                             setup_postdata($post);
 
                             ?>
-
+                            <?php  if ( get_field('new')){ echo "<span class='new'>NEW!</span>"; }?>
                             <a href="<?php echo get_permalink(); ?>"><?php echo the_title(); ?></a>
                             <br>
                             <?php
@@ -126,7 +127,7 @@ get_header('allpage'); ?>
                         </p>
                     </div>
                     <div class="page-content-block-divider"></div>
-                    <h6>12 Дворцов</h6>
+                    <h6 id="dvorci">12 Дворцов</h6>
                     <div class="links-block">
                         <p><img style="float: right; margin: 5px; margin-left: 15px;" src="/wp-content/uploads/2020/08/12suddv.jpg" alt="статьи 12 Дворцов">
                             <?php
@@ -142,7 +143,7 @@ get_header('allpage'); ?>
                                 setup_postdata($post);
 
                                 ?>
-
+                                <?php  if ( get_field('new')){ echo "<span class='new'>NEW!</span>"; }?>
                                 <a href="<?php echo get_permalink(); ?>"><?php echo the_title(); ?></a>
                                 <br>
                                 <?php
@@ -152,7 +153,7 @@ get_header('allpage'); ?>
                         </p>
                     </div>
                     <div class="page-content-block-divider"></div>
-                    <h6>60 Цзя Цзы</h6>
+                    <h6 id="zyazi">60 Цзя Цзы</h6>
                     <div class="links-block">
                         <p><img style="float: left; margin: 5px; margin-right: 15px;" src="/wp-content/uploads/2020/08/60zyazi.jpg" alt="статьи 12 Дворцов">
                             <?php
@@ -168,7 +169,7 @@ get_header('allpage'); ?>
                                 setup_postdata($post);
 
                                 ?>
-
+                                <?php  if ( get_field('new')){ echo "<span class='new'>NEW!</span>"; }?>
                                 <a href="<?php echo get_permalink(); ?>"><?php echo the_title(); ?></a>
                                 <br>
                                 <?php
@@ -178,7 +179,7 @@ get_header('allpage'); ?>
                         </p>
                     </div>
                     <div class="page-content-block-divider"></div>
-                    <h6>Символические звезды в Бацзы</h6>
+                    <h6 id="symbol">Символические звезды в Бацзы</h6>
                     <div class="links-block">
                         <p><img style="float: right; margin: 5px; margin-left: 15px;" src="/wp-content/uploads/2020/08/note-zvezda.jpg" alt="статьи Символические звезды">
                             <?php
@@ -194,7 +195,7 @@ get_header('allpage'); ?>
                                 setup_postdata($post);
 
                                 ?>
-
+                                <?php  if ( get_field('new')){ echo "<span class='new'>NEW!</span>"; }?>
                                 <a href="<?php echo get_permalink(); ?>"><?php echo the_title(); ?></a>
                                 <br>
                                 <?php
@@ -204,7 +205,7 @@ get_header('allpage'); ?>
                         </p>
                     </div>
                     <div class="page-content-block-divider"></div>
-                    <h6>Фэн-шуй</h6>
+                    <h6 id="fenshui">Фэн-шуй</h6>
                     <div class="links-block">
                         <p><img style="float: left; margin: 5px;margin-right: 15px;" src="/wp-content/uploads/2020/08/note-fs.jpg" alt="статьи Фэн-шуй">
                             <?php
@@ -220,7 +221,7 @@ get_header('allpage'); ?>
                                 setup_postdata($post);
 
                                 ?>
-
+                                <?php  if ( get_field('new')){ echo "<span class='new'>NEW!</span>"; }?>
                                 <a href="<?php echo get_permalink(); ?>"><?php echo the_title(); ?></a>
                                 <br>
                                 <?php
@@ -229,14 +230,14 @@ get_header('allpage'); ?>
                             ?>
                         </p>
                     </div>
-                    <h6>2018 год</h6>
+                    <h6>Архив прогнозов</h6>
                     <div class="links-block">
                         <p>
                             <?php
                             global $post;
                             $myposts = get_posts(array(
                                 'numberposts' => -1,
-                                'category'    => 15,
+                                'category'    => "15,16",
                                 'order'       => 'DESC',
                                 'post_type'   => 'post',
                                 'suppress_filters' => false,
@@ -254,32 +255,7 @@ get_header('allpage'); ?>
                             ?>
                         </p>
                     </div>
-                    <h6>2019 год</h6>
-                    <div class="links-block">
-                        <p>
-                            <?php
-                            global $post;
-                            $myposts = get_posts(array(
-                                'numberposts' => -1,
-                                'category'    => 16,
-                                'order'       => 'DESC',
-                                'post_type'   => 'post',
-                                'suppress_filters' => false,
-                            ));
-                            foreach($myposts as $post){
-                                setup_postdata($post);
-
-                                ?>
-
-                                <a href="<?php echo get_permalink(); ?>"><?php echo the_title(); ?></a>
-                                <br>
-                                <?php
-                            }
-                            wp_reset_postdata();
-                            ?>
-                        </p>
-                    </div>
-                    <h6>2020 год</h6>
+                    <h6 id="2020god">2020 год</h6>
                     <div class="links-block">
                         <p>
                             <?php
@@ -295,7 +271,7 @@ get_header('allpage'); ?>
                                 setup_postdata($post);
 
                                 ?>
-
+                                <?php  if ( get_field('new')){ echo "<span class='new'>NEW!</span>"; }?>
                                 <a href="<?php echo get_permalink(); ?>"><?php echo the_title(); ?></a>
                                 <br>
                                 <?php
@@ -305,7 +281,7 @@ get_header('allpage'); ?>
                         </p>
                     </div>
                     <div class="page-content-block-divider"></div>
-                    <h6>Выбор дат</h6>
+                    <h6 id="stati-vybor-dat">Выбор дат</h6>
                     <div class="links-block">
                         <p><img style="float: right; margin: 5px;" src="/wp-content/uploads/2020/08/note-data.jpg" alt="статьи Фэн-шуй">
                             <?php
@@ -321,7 +297,7 @@ get_header('allpage'); ?>
                                 setup_postdata($post);
 
                                 ?>
-
+                                <?php  if ( get_field('new')){ echo "<span class='new'>NEW!</span>"; }?>
                                 <a href="<?php echo get_permalink(); ?>"><?php echo the_title(); ?></a>
                                 <br>
                                 <?php
@@ -331,7 +307,7 @@ get_header('allpage'); ?>
                         </p>
                     </div>
                     <div class="page-content-block-divider"></div>
-                    <h6>ЦИ Мень Дун Цзя</h6>
+                    <h6 id="zi-men">ЦИ Мень Дун Цзя</h6>
                     <div class="links-block">
                         <p>
                             <?php
@@ -347,7 +323,7 @@ get_header('allpage'); ?>
                                 setup_postdata($post);
 
                                 ?>
-
+                                <?php  if ( get_field('new')){ echo "<span class='new'>NEW!</span>"; }?>
                                 <a href="<?php echo get_permalink(); ?>"><?php echo the_title(); ?></a>
                                 <br>
                                 <?php
@@ -357,7 +333,7 @@ get_header('allpage'); ?>
                         </p>
                     </div>
                     <div class="page-content-block-divider"></div>
-                    <h6>Интересное</h6>
+                    <h6 id="interesnoe">Интересное</h6>
                     <div class="links-block">
                         <p>
                             <?php
@@ -373,7 +349,7 @@ get_header('allpage'); ?>
                                 setup_postdata($post);
 
                                 ?>
-
+                                <?php  if ( get_field('new')){ echo "<span class='new'>NEW!</span>"; }?>
                                 <a href="<?php echo get_permalink(); ?>"><?php echo the_title(); ?></a>
                                 <br>
                                 <?php

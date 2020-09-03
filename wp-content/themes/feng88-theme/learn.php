@@ -82,15 +82,15 @@ $svgAttention = "<svg version=\"1.1\" id=\"Capa_1\" xmlns=\"http://www.w3.org/20
                     <div class="learn-page-navigation">
                         <div class="learn-page-navigation-left"><img src="/wp-content/uploads/2020/08/kr-bz.jpg" alt="курсы по бацзы"></div>
                         <div class="learn-page-navigation-right"><ul>
-                                <li><a href="#">Курсы</a></li>
-                                <li><a href="/learn/#stoimost">Стоимость</a></li>
-                                <li><a href="/learn/#skidki">Скидки</a></li>
-                                <li><a href="/learn/#preim">Преимущества</a></li>
-                                <li><a href="/learn/#format">Формат обучения</a></li>
+                                <li><a class="navigation-links" href="courses">Курсы</a></li>
+                                <li><a class="navigation-links" href="stoimost">Стоимость</a></li>
+                                <li><a class="navigation-links" href="skidki">Скидки</a></li>
+                                <li><a class="navigation-links" href="preim">Преимущества</a></li>
+                                <li><a class="navigation-links" href="format">Формат обучения</a></li>
                             </ul></div>
                     </div>
                     <div class="page-content-block-divider"></div>
-                    <h6>Курсы Ба Цзы, Выбор дат, фэн-шуй.</h6>
+                    <h6 id="courses">Курсы Ба Цзы, Выбор дат, фэн-шуй.</h6>
                     <p><img class="text-icon" src="/wp-content/uploads/2020/08/academic.svg" alt="обучение по курсам">Ищите грамотные, четкие и понятные курсы по Ба Цзы? Тогда вам сюда. Я предлагаю заочное обучение в текстовом формате. Вы получаете качественно оформленную, а главное профессиональную информацию. Заочные курсы по темам:  Бацзы, Выбор дат, Фэн-шуй представляют собой материал в формате PDF, объемом от 50 до 200 страниц, снабженный красочными иллюстрациями, понятными схемами, многочисленными примерами. А главное, это полная и доступно изложенная информация по фэн-шуй и Ба Цзы - китайской астрологии Четыре Столпа Судьбы.</p>
                     <h6 id="stoimost" style="text-align: center;">Стоимость <b>заочного</b> обучения  Бацзы, фэн-шуй, Выбор дат</h6>
                     <table>
@@ -103,7 +103,7 @@ $svgAttention = "<svg version=\"1.1\" id=\"Capa_1\" xmlns=\"http://www.w3.org/20
                         </thead>
                         <tbody>
                         <tr>
-                            <td id="bazi" class="table-title" colspan="3">Курсы по Бацзы</td>
+                            <td id="course-bazi" class="table-title" colspan="3">Курсы по Бацзы</td>
                         </tr>
                         <?php
                         global $post;
@@ -120,7 +120,9 @@ $svgAttention = "<svg version=\"1.1\" id=\"Capa_1\" xmlns=\"http://www.w3.org/20
                             ?>
 
                             <tr>
-                                <td><a href="<?php echo get_permalink(); ?>"><?php echo the_title(); ?></a></td>
+                                <td><a href="<?php echo get_permalink(); ?>"><?php echo the_title(); ?></a>
+                                    <?php  if ( get_field('new')){ echo "<span class='new'>NEW!</span>"; }?>
+                                </td>
                                 <td class="position-relative"><?php
                                     if ( get_field('price_discount')){
                                         ?>
@@ -144,7 +146,7 @@ $svgAttention = "<svg version=\"1.1\" id=\"Capa_1\" xmlns=\"http://www.w3.org/20
                         wp_reset_postdata();
                         ?>
                         <tr>
-                            <td id="dvorci"  class="table-title" colspan="3">12 дворцов судьбы</td>
+                            <td id="12-dvorcov"  class="table-title" colspan="3">12 дворцов судьбы</td>
                         </tr>
                         <?php
                         global $post;
@@ -161,7 +163,9 @@ $svgAttention = "<svg version=\"1.1\" id=\"Capa_1\" xmlns=\"http://www.w3.org/20
                             ?>
 
                             <tr>
-                                <td><a href="<?php echo get_permalink(); ?>"><?php echo the_title(); ?></a></td>
+                                <td><a href="<?php echo get_permalink(); ?>"><?php echo the_title(); ?></a>
+                                    <?php  if ( get_field('new')){ echo "<span class='new'>NEW!</span>"; }?>
+                                </td>
                                 <td class="position-relative"><?php
                                     if ( get_field('price_discount')){
                                         ?>
@@ -185,7 +189,7 @@ $svgAttention = "<svg version=\"1.1\" id=\"Capa_1\" xmlns=\"http://www.w3.org/20
                         wp_reset_postdata();
                         ?>
                         <tr>
-                            <td id="vibor-dat" class="table-title" colspan="3">Выбор дат</td>
+                            <td id="vybor-dat" class="table-title" colspan="3">Выбор дат</td>
                         </tr>
                         <?php
                         global $post;
@@ -202,7 +206,9 @@ $svgAttention = "<svg version=\"1.1\" id=\"Capa_1\" xmlns=\"http://www.w3.org/20
                             ?>
 
                             <tr>
-                                <td><a href="<?php echo get_permalink(); ?>"><?php echo the_title(); ?></a></td>
+                                <td><a href="<?php echo get_permalink(); ?>"><?php echo the_title(); ?></a>
+                                    <?php  if ( get_field('new')){ echo "<span class='new'>NEW!</span>"; }?>
+                                </td>
                                 <td class="position-relative"><?php
                                     if ( get_field('price_discount')){
                                         ?>
@@ -243,7 +249,9 @@ $svgAttention = "<svg version=\"1.1\" id=\"Capa_1\" xmlns=\"http://www.w3.org/20
                             ?>
 
                             <tr>
-                                <td><a href="<?php echo get_permalink(); ?>"><?php echo the_title(); ?></a></td>
+                                <td><a href="<?php echo get_permalink(); ?>"><?php echo the_title(); ?></a>
+                                    <?php  if ( get_field('new')){ echo "<span class='new'>NEW!</span>"; }?>
+                                </td>
                                 <td class="position-relative"><?php
                                     if ( get_field('price_discount')){
                                         ?>
@@ -267,7 +275,7 @@ $svgAttention = "<svg version=\"1.1\" id=\"Capa_1\" xmlns=\"http://www.w3.org/20
                         wp_reset_postdata();
                         ?>
                         <tr>
-                            <td id="sprav" class="table-title" colspan="3">Справочники</td>
+                            <td id="spravochniki" class="table-title" colspan="3">Справочники</td>
                         </tr>
                         <?php
                         global $post;
@@ -284,7 +292,9 @@ $svgAttention = "<svg version=\"1.1\" id=\"Capa_1\" xmlns=\"http://www.w3.org/20
                             ?>
 
                             <tr>
-                                <td><a href="<?php echo get_permalink(); ?>"><?php echo the_title(); ?></a></td>
+                                <td><a href="<?php echo get_permalink(); ?>"><?php echo the_title(); ?></a>
+                                    <?php  if ( get_field('new')){ echo "<span class='new'>NEW!</span>"; }?>
+                                </td>
                                 <td class="position-relative"><?php
                                     if ( get_field('price_discount')){
                                         ?>
@@ -325,7 +335,9 @@ $svgAttention = "<svg version=\"1.1\" id=\"Capa_1\" xmlns=\"http://www.w3.org/20
                             ?>
 
                             <tr>
-                                <td><a href="<?php echo get_permalink(); ?>"><?php echo the_title(); ?></a></td>
+                                <td><a href="<?php echo get_permalink(); ?>"><?php echo the_title(); ?></a>
+                                    <?php  if ( get_field('new')){ echo "<span class='new'>NEW!</span>"; }?>
+                                </td>
                                 <td class="position-relative"><?php
                                     if ( get_field('price_discount')){
                                         ?>
@@ -366,7 +378,9 @@ $svgAttention = "<svg version=\"1.1\" id=\"Capa_1\" xmlns=\"http://www.w3.org/20
                             ?>
 
                             <tr>
-                                <td><a href="<?php echo get_permalink(); ?>"><?php echo the_title(); ?></a></td>
+                                <td><a href="<?php echo get_permalink(); ?>"><?php echo the_title(); ?></a>
+                                    <?php  if ( get_field('new')){ echo "<span class='new'>NEW!</span>"; }?>
+                                </td>
                                 <td class="position-relative"><?php
                                     if ( get_field('price_discount')){
                                         ?>

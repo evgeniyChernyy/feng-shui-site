@@ -1,3 +1,5 @@
+
+
 jQuery( document ).ready(function( $ ) {
 
 	"use strict";
@@ -177,6 +179,12 @@ jQuery( document ).ready(function( $ ) {
 
 
 document.addEventListener("DOMContentLoaded", ()=>{
+    // скролл для страниц "обучение" и "статьи"
+    if(location.pathname == '/learn/' || location.pathname == '/articles/'){
+      setTimeout(checkScroll, 500);
+      setSpecialScroll();
+    } else if(location.pathname.split('/')[1] == "course") setSpecialScroll();
+
     // обработка кликов по бургер меню
     if(window.innerWidth < 1025){
         burgerMenuInit();
@@ -188,13 +196,67 @@ document.addEventListener("DOMContentLoaded", ()=>{
     // установка картинки инпута для сайдбаров, создание стики-сайдбара
     if(document.querySelector(".sidebar-container")){
         checkSidebarInput();
-        initStickySidebar();
+        if (!(location.pathname == "/prognoz/")) initStickySidebar();
+
     }
 
     // кнопка "вверх"
     document.addEventListener('scroll', checkUpButton);
     registerUpButton();
 });
+
+// скролл для страниц "обучение" и "статьи"
+function checkScroll(){
+
+    if (!location.hash) return;
+
+    let id = location.hash.slice(1),
+        el = document.getElementById(id);
+
+    window.scrollTo({
+        top: (el.getBoundingClientRect().top + pageYOffset) - 80,
+        behavior: "smooth"
+    })
+    console.log('scrolled!');
+}
+function setSpecialScroll(){
+    document.addEventListener('click', function(ev){
+        if(ev.target.closest('#menu-item-6 a') && location.pathname == "/learn/"){
+            ev.preventDefault();
+            let id = ev.target.closest('a').getAttribute('href').split('/')[2].slice(1),
+                el = document.getElementById(id);
+
+            window.scrollTo({
+                top: (el.getBoundingClientRect().top + pageYOffset) - 80,
+                behavior: "smooth"
+            })
+            console.log('scrolled!');
+        }
+
+        if(ev.target.closest('#menu-item-45 a') && location.pathname == "/articles/"){
+            ev.preventDefault();
+            let id = ev.target.closest('a').getAttribute('href').split('/')[2].slice(1),
+                el = document.getElementById(id);
+
+            window.scrollTo({
+                top: (el.getBoundingClientRect().top + pageYOffset) - 80,
+                behavior: "smooth"
+            })
+            console.log('scrolled!');
+        }
+
+        if (ev.target.closest('a.navigation-links')){
+            ev.preventDefault();
+            let id = ev.target.closest('a').getAttribute('href'),
+                el = document.getElementById(id);
+
+            window.scrollTo({
+                top: (el.getBoundingClientRect().top + pageYOffset) - 80,
+                behavior: "smooth"
+            })
+        }
+    })
+}
 
 //  кнопка ВВЕРХ , работающая по скроллу и клик по ней
 function checkUpButton(){
@@ -327,7 +389,7 @@ function initStickySidebar() {
             if(window.scrollY < bannerHeight){
                 sideBar.classList.remove('sticky');
             }
-            if(sideBarTop >= sideBarContTop){
+            if(sideBarTop >= sideBarContTop && !sideBarCont.classList.contains('hidden')){
                 sideBar.classList.remove('sticky');
                 sideBar.classList.add('stopped');
                 downed = true;
@@ -338,7 +400,6 @@ function initStickySidebar() {
                 downed = false;
             }
         })
-
 
     function getHeight() {
         let height = 0;
