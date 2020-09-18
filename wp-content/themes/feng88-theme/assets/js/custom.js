@@ -1,5 +1,3 @@
-
-
 jQuery( document ).ready(function( $ ) {
 
 	"use strict";
@@ -183,6 +181,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     if(location.pathname == '/learn/' || location.pathname == '/articles/'){
       setTimeout(checkScroll, 500);
       setSpecialScroll();
+      setAccordion();
     } else if(location.pathname.split('/')[1] == "course") setSpecialScroll();
 
     // обработка кликов по бургер меню
@@ -204,7 +203,21 @@ document.addEventListener("DOMContentLoaded", ()=>{
     document.addEventListener('scroll', checkUpButton);
     registerUpButton();
 });
+// аккордион для страницы "статьи"
+function setAccordion(){
+    if(!document.getElementById('stati-2018')) return;
 
+    let acc = document.getElementById('stati-2018'),
+        panel = acc.nextElementSibling;
+    acc.addEventListener('click', ()=>{
+        if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+        } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+    });
+
+}
 // скролл для страниц "обучение" и "статьи"
 function checkScroll(){
 

@@ -21,6 +21,7 @@ get_header('allpage'); ?>
                     <div class="breadcrumbs-container">
                         <a href="<?php echo get_site_url() ?>">Главная</a> >> <a href="/learn/">Обучение</a> >> <a href="/learn/#<?php echo $cat[0]->slug; ?>"><?php echo $cat[0]->name; ?></a>
                     </div>
+                    <div class="page-content-block-divider"></div>
                     <div class="open-sidebar-btn"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 469.333 469.333" style="enable-background:new 0 0 469.333 469.333;" xml:space="preserve">
                                 <path style="fill:#ffffff;" d="M426.667,0h-384C19.135,0,0,19.135,0,42.667v384c0,23.531,19.135,42.667,42.667,42.667h384  c23.531,0,42.667-19.135,42.667-42.667v-384C469.333,19.135,450.198,0,426.667,0z"/>
                             <g>
@@ -119,7 +120,7 @@ get_header('allpage'); ?>
                     <?php the_field('comment') ?>
                     <?php endif; ?>
                     <div class="button-container course">
-                        <a href="/consult-bazi" class="filled-button">купить курс</a> <a href="/discont/" class="filled-button">проверить наличие скидки</a>
+                        <a href="/pokupka-kursa/" class="filled-button">купить курс</a> <a href="/discont/" class="filled-button">проверить наличие скидки</a>
                     </div>
                     <div class="page-content-block-divider"></div>
                     <p>По всем вопросам, связанным с приобретением курса <b><?php echo esc_html( get_the_title() ); ?></b> можно обращаться на электронную почту: <a href="mailto:fensh88@gmail.com">fensh88@gmail.com</a></p>

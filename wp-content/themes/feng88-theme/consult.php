@@ -59,8 +59,8 @@ get_header('allpage'); ?>
                             <h5>Вы можете получить консультации по темам:</h5>
                         </p>
                         <p>
-                                <a href="#">Ба Цзы</a> - китайская астрология. Это моя основная специализация. Анализ карты рождения.
-                                Ответы практически на любые вопросы:<img src="/wp-content/uploads/2020/08/derevo-ogon.png" width="150" heigth="150" alt="стихии" style="float: right;margin: 5px;">
+                                <a href="/consult-bazi">Ба Цзы</a> - китайская астрология. Это моя основная специализация. Анализ карты рождения.
+                                Ответы практически на любые вопросы:<img src="/wp-content/uploads/2020/09/kons-bz.jpg" width="150" heigth="150" alt="консультации бацзы" style="float: right;margin: 5px;">
                         </p>
                         <ul>
                                     <li>Обсуждение перспектив во всех сферах жизни: бизнес, отношения,  карьера и т.д.</li>
@@ -75,8 +75,8 @@ get_header('allpage'); ?>
                     <div class="page-content-block-divider"></div>
                     <div class="about-consult-block">
                         <p>
-                            <img src="/wp-content/uploads/2020/08/derevo-ogon.png" width="150" heigth="150" alt="стихии" style="float: left;margin: 5px;">
-                            <a href="#">Выбор дат</a> <br>
+                            <img src="/wp-content/uploads/2020/09/kons-vd.jpg" width="150" heigth="150" alt="выбор благоприятных дат" style="float: left;margin: 5px;">
+                            <a href="/vibor-dat">Выбор дат</a> <br>
                             Расчет наиболее благоприятных дней и часов для конкретного дела в указанный период времени. Чаще всего это выбор дат для поездок, начала бизнеса, событий связанных с рабочими вопросами.
                             <br>
                             Диапазон для выбора не больше трех месяцев. Исключение - выбор даты свадьбы. Для свадьбы желательно подобрать не только подходящий день, но и месяц.
@@ -85,9 +85,9 @@ get_header('allpage'); ?>
                     <div class="page-content-block-divider"></div>
                     <div class="about-consult-block">
                         <p>
-                            <a href="#">Фэн-шуй квартиры/дома</a><br>
+                            <a href="/consult-fenshui">Фэн-шуй квартиры/дома</a><br>
+                            <img src="/wp-content/uploads/2020/09/kons-fs.jpg" width="150" heigth="150" alt="фэн-шуй помещений" style="float: right;margin: 5px;">
                             Расчет и анализ энергетической карты помещения (Летящие звезды). Рекомендации по использованию помещений, оптимальное расположение мест постоянного пребывания: кровать, рабочий стол, место для отдыха.
-                            <img src="/wp-content/uploads/2020/08/derevo-ogon.png" width="150" heigth="150" alt="стихии" style="float: right;margin: 5px;">
                             <br>
                             Сильные и слабые стороны вашего жилья. Энергия квартиры может поддерживать одну тему, например, карьеру, но создавать сложности в семейных отношениях. Или наоборот.
                         </p>
@@ -96,14 +96,14 @@ get_header('allpage'); ?>
                     <div class="page-content-block-divider"></div>
                     <div class="about-consult-block">
                         <p>
-                            <img src="/wp-content/uploads/2020/08/derevo-ogon.png" width="150" heigth="150" alt="стихии" style="float: left;margin: 5px;">
+                            <img src="/wp-content/uploads/2020/09/kons-activ.jpg" width="150" heigth="150" alt="активизации для помещений" style="float: left;margin: 5px;">
                             <b>Активизации для помещений</b>
                             <br>
                             Используются разные методы: фэн-шуй, Ци Мень Дун Цзя, Сюань Кон Да Гуа.
                             Индивидуальные активизации (с учетом вашей карты Ба Цзы): бизнес и карьера, любовь и отношения, продажа недвижимости, учеба и сдача экзаменов, путешествия, личная удача.
                             <br>
                             Данная консультация возможна только на базе анализа фэн-шуй квартиры. Как минимум нужно заказать
-                            <a href="#">разметку помещения</a> или предоставить уже имеющуюся.
+                            <a href="/consult-fenshui/#razmetka">разметку помещения</a> или предоставить уже имеющуюся.
                         </p>
                         <div class="page-content-block-divider"></div>
                         <p>

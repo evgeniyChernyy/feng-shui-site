@@ -10,20 +10,20 @@ get_header(); ?>
         <div class="owl-banner owl-carousel">
             <div class="banner-item-01">
                 <div class="text-content">
-                    <h4>Best Offer</h4>
-                    <h2>New Arrivals On Sale</h2>
+                    <h4>Ба Цзы</h4>
+                    <h2>Профессиональное обучение</h2>
                 </div>
             </div>
             <div class="banner-item-02">
                 <div class="text-content">
-                    <h4>Flash Deals</h4>
-                    <h2>Get your best products</h2>
+                    <h4>Фэн-шуй</h4>
+                    <h2>Проверенные, работающие техники</h2>
                 </div>
             </div>
             <div class="banner-item-03">
                 <div class="text-content">
-                    <h4>Last Minute</h4>
-                    <h2>Grab last minute deals</h2>
+                    <h4>Активации</h4>
+                    <h2>Для удачи и процветания</h2>
                 </div>
             </div>
         </div>
@@ -84,9 +84,9 @@ get_header(); ?>
                     <div class="product-item">
                         <a href="/consult-bazi"><img src="/wp-content/uploads/2020/08/ieroglif.svg" alt="Восстановление часа рождения"></a>
                         <div class="down-content">
-                            <a href="/consult-bazi"><h4>Восстановление часа рождения</h4></a>
+                            <a href="/consult-bazi/#birthtime"><h4>Восстановление часа рождения</h4></a>
                             <p>Правильно определив час, можно многократно повысить точность прогноза. Час в Бацзы дает понимание собственных внутренних установок, рассказывает об отношениях с детьми, описывает перспективы развития дел в собственном бизнесе, дает подсказку о возможности переезда.</p>
-                            <a href="/consult-bazi" class="filled-button">подробнее</a>
+                            <a href="/consult-bazi/#birthtime" class="filled-button">подробнее</a>
                         </div>
                     </div>
                 </div>
@@ -100,31 +100,32 @@ get_header(); ?>
                 <div class="col-lg-12">
                     <div class="section-heading">
                         <h2>Курсы</h2>
+                        <a href="/learn/courses" class="floatleft">все курсы <i class="fa fa-angle-right"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="product-item">
-                        <a href="/learn#bazi"><img src="/wp-content/uploads/2020/08/zyan-zi.jpg" alt="Курсы по бацзы"></a>
+                        <a href="<?php echo the_field('course1-link'); ?>"><img src="<?php echo the_field('course1-img'); ?>" alt="Курсы по бацзы"></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="product-item">
-                        <a href="/learn#dvorci"><img src="/wp-content/uploads/2020/08/zyan-zi.jpg" alt="Курсы дворцы судьбы"></a>
+                        <a href="<?php echo the_field('course2-link'); ?>"><img src="<?php echo the_field('course2-img'); ?>" alt="Курсы дворцы судьбы"></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="product-item">
-                        <a href="/learn#daty"><img src="/wp-content/uploads/2020/08/zyan-zi.jpg" alt="Курсы выбор дат"></a>
+                        <a href="<?php echo the_field('course3-link'); ?>"><img src="<?php echo the_field('course3-img'); ?>" alt="Курсы выбор дат"></a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="product-item">
-                        <a href="/learn#uroki-bazi"><img src="/wp-content/uploads/2020/08/zyan-zi.jpg" alt="Уроки бацзы"></a>
+                        <a href="<?php echo the_field('course4-link'); ?>"><img src="<?php echo the_field('course4-img'); ?>" alt="Уроки бацзы"></a>
                     </div>
                 </div>
                 <div class="col-lg-12">
                     <div class="button-container">
-                    <a href="/consult-bazi" class="filled-button">все курсы</a>
+                    <a href="/learn/#courses" class="filled-button">все курсы</a>
                     </div>
                 </div>
             </div>
@@ -149,7 +150,7 @@ get_header(); ?>
                             </div>
                             <div class="col-lg-4">
                                 <div class="button-container">
-                                <a href="#" class="filled-button">Узнать сейчас</a>
+                                <a href="/consult-bazi/" class="filled-button">Узнать сейчас</a>
                                 </div>
                             </div>
                         </div>

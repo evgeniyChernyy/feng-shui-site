@@ -405,7 +405,7 @@ $svgAttention = "<svg version=\"1.1\" id=\"Capa_1\" xmlns=\"http://www.w3.org/20
                         ?>
                         </tbody>
                     </table>
-                    <div class="button-container"><a href="#" class="filled-button">Купить курс</a></div>
+                    <div class="button-container"><a href="/pokupka-kursa/" class="filled-button">Купить курс</a></div>
 
                 <div class="page-content">
                     <?php the_content(); ?>
