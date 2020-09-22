@@ -7,14 +7,16 @@
 <?php
 $s=get_search_query();
 $args = array(
-    's' =>$s
+    's' =>$s,
+    'posts_per_page' => 10
 );
 // The Query
 $the_query = new WP_Query( $args );
+$number = $the_query->found_posts;
 if ( $the_query->have_posts() ) {
-    _e("<h4>По Вашему запросу '".get_query_var('s')."' найдено:</h4>");
+    _e("<h4>По Вашему запросу '".get_query_var('s')."' найдено:".$number." страниц</h4>");
     ?>
-    <ol>
+    <ol class="search-list">
         <?php
     while ( $the_query->have_posts() ) {
         $the_query->the_post();
@@ -27,6 +29,25 @@ if ( $the_query->have_posts() ) {
     }
     ?>
     </ol>
+
+    <div class="pagination">
+        <?php
+        $argus = array(
+            'show_all'     => false, // показаны все страницы участвующие в пагинации
+            'end_size'     => 1,     // количество страниц на концах
+            'mid_size'     => 2,     // количество страниц вокруг текущей
+            'prev_next'    => true,  // выводить ли боковые ссылки "предыдущая/следующая страница".
+            'prev_text'    => __('Предыдущая'),
+            'next_text'    => __('Следующая'),
+            'add_args'     => false, // Массив аргументов (переменных запроса), которые нужно добавить к ссылкам.
+            'add_fragment' => '',     // Текст который добавиться ко всем ссылкам.
+            'screen_reader_text' => __(' '),
+        );
+
+        the_posts_pagination( $argus );
+        ?>
+
+    </div>
         <?php
 }else{
     ?>

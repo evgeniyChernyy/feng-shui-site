@@ -54,11 +54,12 @@ get_header('allpage'); ?>
                     <span>Статьи о Фэн-шуй, Бацзы и всяком разном</span>
                 </div>
                 <div class="articles-page-content page-content">
+                    <p style="text-align: center">Раздел регулярно пополняется. Смотрите также видео <a href="https://www.youtube.com/channel/UC1q-O_Xvzy6kiDMuBBHHNZw">канале Youtube</a>.</p>
                     <div class="articles-page-navigation">
-                        <div class="articles-page-navigation-left"><img src="/wp-content/uploads/2020/08/note1.png" alt="статьи о фен-шуй,бацзы"></div>
+                        <div class="articles-page-navigation-left">
+<!--                            <img src="/wp-content/uploads/2020/08/note1.png" alt="статьи о фен-шуй,бацзы">-->
+                        </div>
                         <div class="articles-page-navigation-right">
-                            <p>Раздел регулярно пополняется. Еще больше интересных заметок, видео и обсуждений в группе
-                                <a href="#">В контакте</a>. А также видео на <a href="https://www.youtube.com/channel/UC1q-O_Xvzy6kiDMuBBHHNZw">канале Youtube</a>.</p>
                             <span class="articles-subtitle">Разделы</span>
                             <br>
                             <span class="articles-links"><a class="navigation-links" href="2020god">2020 год</a></span>
@@ -70,7 +71,7 @@ get_header('allpage'); ?>
                             <span class="articles-links"><a class="navigation-links" href="fenshui">Фэн-шуй</a></span>
                             <span class="articles-links"><a class="navigation-links" href="stati-vybor-dat">Выбор дат</a></span>
                             <span class="articles-links"><a class="navigation-links" href="zi-men">Ци Мень</a></span>
-                            <span class="articles-links"><a class="navigation-links" href="interesnoe">Интересное</a></span>
+<!--                            <span class="articles-links"><a class="navigation-links" href="interesnoe">Интересное</a></span>-->
                             </div>
                     </div>
                     <div class="page-content-block-divider"></div>

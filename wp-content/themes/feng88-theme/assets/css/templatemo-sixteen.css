@@ -830,7 +830,20 @@ header .slogan-container h1 span{
 }
 
 .single-course-page-content h6{
-	margin-top: 1rem;
+	margin-bottom: .4rem;
+}
+.single-course-page-content .otzyvy-container{
+	background-color: #f7f7f7;
+	padding: 1rem;
+	border-radius: .8rem;
+}
+.single-course-page-content .otzyvy-container p.sign{
+	border-bottom: 2px solid #ff2f2f;
+	padding-bottom: .6rem;
+	font-weight: 700;
+}
+.single-course-page-content .otzyvy-container p.sign:last-child{
+	border-bottom: none;
 }
 /*  page learn CONTENT */
 .articles-page-navigation,
@@ -1154,6 +1167,16 @@ header .slogan-container h1 span{
 }
 .search-page-content .search-results{
 	font-size: .9rem;
+}
+.search-page-content .navigation.pagination{
+	margin: 0 auto;
+}
+.search-page-content .navigation.pagination .nav-links .next,
+.search-page-content .navigation.pagination .nav-links .prev{
+	font-size: 0.8rem;
+	text-transform: lowercase;
+	text-decoration: none!important;
+	padding: 0 1rem;
 }
 .after-banner-content ul,
 .after-banner-content ol,
@@ -1486,9 +1509,6 @@ footer .inner-content p a {
 	opacity: 0.8;
 }
 
-
-
-
 /* Find Us */
 
 .find-us {
@@ -1548,10 +1568,10 @@ footer .inner-content p a {
 
 /*   страница СТАТЬИ     */
 .articles-page-navigation-right{
-	margin-left: 1rem;
-}
-.articles-page-navigation-right p{
-	text-align: center;
+	/*margin-left: 1rem;*/
+	background-color: #f7f7f7;
+	padding: .8rem;
+	border-radius: .8rem;
 }
 .articles-page-navigation-right .articles-links a{
 	font-size: .7rem;
@@ -2111,5 +2131,16 @@ header .slogan-container {
 	}
 	.table-container table{
 		box-shadow: none;
+	}
+	.search-page-content .search-list{
+		padding-left: 1rem;
+	}
+	.search-page-content h4{
+		font-size: 1.3rem;
+		margin-bottom: 1rem;
+	}
+	.search-page-content .navigation.pagination .nav-links .next,
+	.search-page-content .navigation.pagination .nav-links .prev{
+		display: block;
 	}
 }

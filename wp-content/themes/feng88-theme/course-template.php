@@ -85,6 +85,9 @@ get_header('allpage'); ?>
                                 <li><a class="navigation-links" href="course-programm">Программа</a></li>
                                 <?php endif; ?>
                                 <li><a class="navigation-links" href="course-price">Стоимость</a></li>
+                                <?php if( get_field('otzyvy') ) :?>
+                                    <li><a class="navigation-links" href="course-otzyvy">Отзывы</a></li>
+                                <?php endif; ?>
                             </ul></div>
                     </div>
                     <div class="page-content-block-divider"></div>
@@ -133,6 +136,16 @@ get_header('allpage'); ?>
                     </p>
                     <?php
                 } ?>
+
+                    <?php if( get_field('otzyvy') ) :?>
+
+                    <div class="otzyvy-container">
+                        <h6 id="course-otzyvy">Отзывы</h6>
+                        <img class="text-icon" src="/wp-content/uploads/2020/08/checked.svg" alt="отзывы о курсе">
+                        <?php the_field('otzyvy') ?>
+                    </div>
+
+                    <?php endif; ?>
                 </div>
                 <?php
                 endwhile;
